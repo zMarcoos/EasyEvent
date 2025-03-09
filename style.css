@@ -1,0 +1,215 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, input, select, textarea {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #e5e5e5;
+}
+
+body::before {
+  content: '';
+  background: #121214;
+  width: 100%;
+  height: 36.8rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.content {
+  max-width: 76.8rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+header {
+  max-width: 31.9rem;
+  width: 100%;
+  margin-top: 7.4rem;
+}
+
+header h1 {
+  color: white;
+  font-family: 'Archivo', sans-serif;
+  font-size: 3.6rem;
+  line-height: 4.2rem;
+  margin-bottom: 2.4rem;
+}
+
+header p {
+  color: #42d3ff;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+form {
+  background: #fafafc;
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+  margin-top: 3.8rem;
+  min-height: 30rem;
+  padding: 6.4rem;
+}
+
+form fieldset {
+  border: none;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+form fieldset legend {
+  border-bottom: 1px solid #e6e6f0;
+  font-family: 'Archivo', sans-serif;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  padding-bottom: 1.6rem;
+  width: 100%;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper label,
+.checkbox-wrapper label {
+  color: #4e4958;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+
+.input-wrapper label {
+  margin-bottom: 0.8rem;
+}
+
+.input-wrapper span {
+  color: #a9a7af;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin-left: 1.2rem;
+}
+
+.input-wrapper span:hover {
+  color: #6c6a71;
+}
+
+.input-wrapper input,
+.input-wrapper textarea,
+.input-wrapper select {
+  background: #fafafc;
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+  color: #6c6a71;
+  font-size: 1.6rem;
+  height: 5.6rem;
+  line-height: 2.6rem;
+  padding: 0 2.4rem;
+}
+
+.input-wrapper textarea {
+  height: 16.8rem;
+}
+
+.input-wrapper select {
+  -webkit-appearance: none;
+  appearance: none;
+
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M12 17.414 3.293 8.707l1.414-1.414L12 14.586l7.293-7.293 1.414 1.414L12 17.414z'/%3E%3C/svg%3E") no-repeat right 2.4rem center;
+}
+
+.checkbox-wrapper {
+  position: relative;
+}
+
+.checkbox-wrapper label {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.checkbox-wrapper label::before {
+  border: 1px solid #e6e6f0;
+  border-radius: 8px;
+  content: '';
+  display: block;
+  height: 24px;
+  width: 24px;
+}
+
+.checkbox-wrapper input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  z-index: -1;
+}
+
+.checkbox-wrapper input:focus + label::before {
+  outline: 2px solid black;
+}
+
+.checkbox-wrapper input:checked + label::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' width='24' height='24' viewBox='0,0,256,256'%3E%3Cg fill='%2300fff7' fill-rule='nonzero' stroke='none' stroke-width='1' stroke-linecap='butt' stroke-linejoin='miter' stroke-miterlimit='10' stroke-dasharray='' stroke-dashoffset='0' font-family='none' font-weight='none' font-size='none' text-anchor='none' style='mix-blend-mode: normal'%3E%3Cg transform='scale(10.66667,10.66667)'%3E%3Cpath d='M20.29297,5.29297l-11.29297,11.29297l-4.29297,-4.29297l-1.41406,1.41406l5.70703,5.70703l12.70703,-12.70703z'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.three-columns {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.three-columns > div:nth-child(1) {
+  width: 100%;
+}
+
+footer {
+  background: #f0f0f4;
+  border-radius: 0 0 8px 8px;
+  border-top: 1px solid #d6d6d6;
+  display: flex;
+  flex-direction: column;
+  height: 13.6rem;
+  text-align: center;
+  margin-bottom: 10rem;
+  padding: 4rem 6.4rem;
+}
+
+footer button {
+  background: #04d361;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  font-family: 'Archivo', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  height: 5.6rem;
+  line-height: 2.6rem;
+}
+
+footer button:hover {
+  cursor: pointer;
+  filter: brightness(0.85);
+}
+
+input:invalid {
+  border: 1px solid #ff5555;
+}
